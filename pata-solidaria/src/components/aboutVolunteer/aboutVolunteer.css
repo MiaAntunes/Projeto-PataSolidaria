@@ -37,10 +37,16 @@
     border-radius: 8px;
   }
 
+  .forms-container{
+    margin-top: 2em;
+    max-width: 70%;
+  }
+
   
   @media screen and  (max-width:1000px) {
     .about-volunteer {/* Remova a altura fixa */
         gap: 1em;
+        margin: 0;
     }
 
     .about-volunteer-title{
@@ -49,6 +55,10 @@
 
     .text-container {
         margin-right: 20px; /* Adiciona espaço entre o texto e a imagem */
+    }
+
+    .forms-container{
+      max-width: 100%;
     }
 
 }
