@@ -1,0 +1,107 @@
+/* Estilos do Cabeçalho */
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+
+}
+
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+img{
+    width: 15em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-weight: bold;
+    gap: 0.5em;
+
+    width: 100%;
+}
+
+nav ul li {
+    margin-left: 20px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #db8f00;
+    font-size: 1.2rem;
+
+}
+
+.header-text{
+    font-size: 1em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.header-title {
+    font-size: 1.3em;
+}
+
+/* Mídia Query para Responsividade */
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    nav ul {
+        gap: 2em; /* Reduz o espaçamento entre os itens do menu */
+
+    }
+
+    nav ul li {
+        margin-left: 10px; /* Reduz o espaçamento entre os itens do menu */
+    }
+
+    nav ul li a {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    nav ul li {
+        margin-left: 10px; /* Reduz o espaçamento entre os itens do menu */
+        gap: 0.5em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    nav ul li {
+        margin-left: 5px; /* Reduz ainda mais o espaçamento entre os itens do menu */
+    }
+}
+ 

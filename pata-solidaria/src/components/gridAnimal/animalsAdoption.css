@@ -1,0 +1,95 @@
+.animals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    height: 80vh;
+}
+
+.container-animals {
+    background-color: #D9CCB4;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+    
+}
+
+.container-article {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 70%; /* Defina a largura desejada para o container */
+    max-width: 100em;
+    height: auto; /* Permita que a altura seja ajustada conforme o conteúdo */
+    overflow-x: auto; /* Adicione scroll apenas na direção horizontal */
+
+       /* Estilização do scroll */
+       scrollbar-width: thin; /* Define a largura da barra de rolagem (Chrome e Firefox) */
+       scrollbar-color: #59514A transparent; /* Define a cor da barra e do fundo da barra de rolagem */
+}
+
+.container-article::-webkit-scrollbar {
+    width: 0; /* Largura da barra de rolagem */
+}
+
+.container-article::-webkit-scrollbar-track {
+    background-color: #59514A; /* Cor de fundo da barra de rolagem */
+}
+
+.container-article::-webkit-scrollbar-thumb {
+    background-color: #59514A; /* Cor da barra de rolagem */
+    border-radius: 10px; /* Raio da borda da barra de rolagem */
+    transition: background-color 0.3s;
+}
+
+.container-article .card {
+    flex: 0 0 auto; 
+    width: 300px; 
+}
+
+/* Estilos para dispositivos de tela menores que 400px (celulares) */
+@media screen and (max-width: 400px) {
+    .container-animals{
+        padding: 1em 0;
+    }
+
+    .container-article {
+        width: 90%; /* Reduz a largura para melhorar a visualização em telas pequenas */
+    }
+
+    .container-article .card {
+        max-width: 90%; /* Reduz a largura máxima do cartão para melhorar a visualização em telas pequenas */
+    }
+}
+
+/* Estilos para dispositivos de tela entre 401px e 800px (tablets) */
+@media screen and (min-width: 401px) and (max-width: 900px) {
+    .container-animals{
+        padding: 1em 0;
+    }
+
+    .container-article {
+        width: 80%; /* Reduz a largura para melhorar a visualização em tablets */
+    }
+
+    .container-article .card {
+        max-width: 90%; /* Reduz a largura máxima do cartão para melhorar a visualização em tablets */
+    }
+}
+
+@media screen and (min-width: 2000px)  {
+    .container-animals{
+        padding: 1em 0;
+    }
+
+    .container-article {
+        width: 50%; /* Reduz a largura para melhorar a visualização em tablets */
+    }
+
+    .container-article .card {
+        max-width: 50%; /* Reduz a largura máxima do cartão para melhorar a visualização em tablets */
+    }
+}

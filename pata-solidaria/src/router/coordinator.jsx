@@ -2,6 +2,6 @@ export const goToHomePage = (navigate) => {
     return navigate('')
 }
 
-export const goToPostIdPage = (navigate) => {
+export const goToTrabalhoVoluntariado = (navigate) => {
     return navigate(`/contact`)
 }

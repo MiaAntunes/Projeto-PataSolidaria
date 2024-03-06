@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { Contact } from "../pages/Contact"
 import { Home } from "../pages/Home"
+import { JobVolunteer } from "../pages/JobVolunteer"
 
 
 export const AppRoutes = () =>{
@@ -8,7 +8,7 @@ export const AppRoutes = () =>{
         <BrowserRouter>
          <Routes>
             <Route path="/" element={<Home/>} />
-            <Route path="/contact" element={<Contact/>} />
+            <Route path="/trabalhovoluntariado" element={<JobVolunteer/>} />
          </Routes>
         </BrowserRouter>
        

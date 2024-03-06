@@ -1,0 +1,118 @@
+.services-section {
+    padding: 20px;
+    min-height: 60vh;
+  }
+  
+  .services-container {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  
+  .services-title {
+    text-align: center;
+  }
+  
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .service-list li {
+    list-style-type: disc;
+  }
+  
+  .service-item {
+    background-color: #f4e8ce;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    max-width: 500px;
+    height: auto;
+    min-height: 30vh;
+  }
+  
+  .service-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  .service-title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .service-text {
+    font-family: "Montserrat", sans-serif;
+    margin: 0.5em;
+  }
+
+  .container-forms{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    overflow: hidden;
+  }
+
+  @media (min-width: 2000px){
+    .services-container {
+      max-width: 50%;
+  }
+  }
+
+  @media (min-width: 601px) and (max-width:1000px){
+    .services-container {
+      max-width: 70%;
+    }
+  
+    .service-item {
+      width: 45%;
+      max-width: 450px;
+    }
+  }
+  
+  /* Estilos para telas menores ou iguais a 600px (tablets) */
+  @media (max-width: 600px) {
+    .service-item {
+      width: 90%;
+      max-width: 400px;
+    }
+  }
+  
+  /* Estilos para telas menores ou iguais a 350px (celulares) */
+  @media (max-width: 500px) {
+    .services-container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .service-item {
+      width: 100%;
+
+    }
+
+
+    .services-list {
+        display: flex;
+        flex-direction: column;
+        justify-content:baseline ;
+        gap: 1em ;
+    }
+
+    .service-icon {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .service-text {
+      font-size: 14px;
+    }
+  }
+
+
+
+  
