@@ -1,4 +1,5 @@
 import volunteer from "../../assets/volunteer.jpg"
+import { Forms } from "../forms/Forms"
 import "./aboutVolunteer.css"
 
 
@@ -14,6 +15,9 @@ export const AboutVolunteer = () =>{
             </article>
             <div className="image-container">
                 <img src={volunteer} alt="Foto de ajuda aos animais"/>
+            </div>
+            <div className="forms-container">
+               <Forms title="Convocação para Voluntariado: Junte-se a Nós e Faça a Diferença!" />
             </div>
         </section>
     )

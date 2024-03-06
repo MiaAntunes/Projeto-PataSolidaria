@@ -10,7 +10,6 @@ export const JobVolunteer = () => {
         <>
             <HeaderPages />
             <AboutVolunteer />
-            <Forms title="Convocação para Voluntariado: Junte-se a Nós e Faça a Diferença!" />
             <FooterComponent/>
         </>
     )
