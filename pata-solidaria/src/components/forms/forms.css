@@ -1,0 +1,72 @@
+.formulario-container {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 1.5em;
+    background-color: #d9ccb484;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.609);
+  }
+  
+  .formulario-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .formulario-title{
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .formulario-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .formulario-container input[type="text"],
+  .formulario-container input[type="email"],
+  .formulario-container input[type="tel"],
+  .formulario-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .formulario-container input[type="submit"] {
+    background-color: #59514A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .formulario-container input[type="submit"]:hover {
+    background-color: #59514A;
+  }
+
+  @media screen and (max-width: 350px) {
+    .formulario-container {
+      max-width: 100%;
+      padding: 1em;
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (min-width: 351px) and (max-width: 550px) {
+    .formulario-container {
+      max-width: 80%;
+      padding: 1.25em;
+    }
+  }
+  
+  @media screen and (min-width: 551px) and (max-width: 800px) {
+    .formulario-container {
+      max-width: 70%;
+      padding: 1.5em;
+    }
+  }
+
